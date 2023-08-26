@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+}
+
+input, button {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  font-family: "Jura", sans-serif;
+  background: #ECECEC;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+[class*=__container] {
+  padding: 0px 15px;
+  max-width: 1115px;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* начальное положение - 0 градусов поворота */
+  }
+  to {
+    transform: rotate(360deg); /* конечное положение - 360 градусов поворота (полный оборот) */
+  }
+}
+.header .header__container {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .header__navbar ul {
+  display: flex;
+}
+.header .header__navbar ul li {
+  color: #0E92AD;
+  font-family: Jura;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.header .header__navbar ul li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.welcome .welcome__container {
+  display: grid;
+  grid-template: auto 1fr/auto auto;
+}
+.welcome .welcome__text-box {
+  margin-top: 116px;
+}
+.welcome .welcome__image-box {
+  justify-self: end;
+  grid-area: 1/2/3/2;
+  position: relative;
+  width: 540px;
+  height: 540px;
+  display: grid;
+}
+.welcome .welcome__button-box {
+  margin-top: 66px;
+}
+.welcome .welcome__title {
+  color: #323232;
+  font-family: Jura;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.welcome .welcome__front-image {
+  justify-self: center;
+  align-self: self-end;
+}
+.welcome .welcome__background-image {
+  position: absolute;
+  top: 50px;
+  z-index: -1;
+  animation: rotate 300s infinite linear;
+}
+.welcome .welcome__background-fill {
+  position: absolute;
+  top: 50px;
+  z-index: -2;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  background: rgba(46, 177, 183, 0.4);
+  filter: blur(40px);
+}
+.welcome .welcome__button {
+  color: #000;
+  font-family: Jura;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  border-radius: 10px;
+  background: #A1CDCF;
+  padding: 12px 60px;
+}
+
+.about {
+  background: #A1CDCF;
+  display: flex;
+}/*# sourceMappingURL=main.css.map */
