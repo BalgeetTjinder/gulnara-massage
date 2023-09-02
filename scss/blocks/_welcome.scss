@@ -48,14 +48,38 @@
         background: rgba(46, 177, 183, 0.40);
         filter: blur(40px);
     }
+
+
+    // .welcome__button {
+    //     background: #A1CDCF;
+    //     padding: 12px 60px;
+    //     font-size: 30px;
+    //     font-weight: 400;
+    //     letter-spacing: 0.3px;
+
+    //     &:before {
+    //         content: '';
+    //         position: absolute;
+    //         height: 150px;
+    //         width: 50px;
+    //         background : #fff;
+    //         left: -55px;
+    //         top: -40px;
+    //         transform: rotate(37deg);
+    //         transition: all .3s;
+    //         opacity: 0.3;
+    //     }
+
+    //     &:hover::before {
+    //         left:100%;
+    //     }
+    //   }
+
     .welcome__button {
-        color: #000;
-        font-family: $primary-font;
+        background: #A1CDCF;
+        padding: 12px 60px;
         font-size: 30px;
         font-weight: 400;
         letter-spacing: 0.3px;
-        border-radius: 10px;
-        background: #A1CDCF;
-        padding: 12px 60px;
     }
 }

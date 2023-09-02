@@ -26,7 +26,44 @@ body {
 }
 
 .button {
-    
+    font-family: $primary-font;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    position:relative;
+    overflow:hidden;
+
+    transition: transform 0.3s ease; 
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 150px;
+        width: 30px;
+        background : #fff;
+        left: -55px;
+        top: -40px;
+        transform: rotate(37deg);
+        opacity: 0.4;
+        animation: buttonGlare 3s infinite;        
+    }
+}
+
+.button:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes buttonGlare {
+    0% {
+        left: -15%;
+    }
+    30% {
+        left: 110%;
+    }
+    100% {
+        left: 110%;
+    }
 }
 
 @keyframes rotate {
